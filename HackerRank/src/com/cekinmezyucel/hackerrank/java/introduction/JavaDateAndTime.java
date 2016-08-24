@@ -12,12 +12,12 @@ public class JavaDateAndTime {
 		String day = in.next();
 		String year = in.next();
 
-		javaDateAndTime(year, month, day);
+		calculateDayOfGivenDate(year, month, day);
 
 		in.close();
 	}
 
-	public static void javaDateAndTime(String year, String month, String day) {
+	public static void calculateDayOfGivenDate(String year, String month, String day) {
 
 		int dDay = Integer.valueOf(day);
 		int dMonth = Integer.valueOf(month);

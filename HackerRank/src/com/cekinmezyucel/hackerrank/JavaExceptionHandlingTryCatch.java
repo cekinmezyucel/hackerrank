@@ -1,7 +1,7 @@
 package com.cekinmezyucel.hackerrank;
 
-import java.io.*;
-import java.util.*;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class JavaExceptionHandlingTryCatch {
 
@@ -17,6 +17,8 @@ public class JavaExceptionHandlingTryCatch {
                 System.out.println("java.util.InputMismatchException");  
             } catch (ArithmeticException e2){
                 System.out.println(e2);
-            } 
+            } finally {
+				scan.close();
+			}
     }
 }

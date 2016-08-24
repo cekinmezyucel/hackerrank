@@ -1,4 +1,4 @@
-package com.cekinmezyucel.hackerrank.java;
+package com.cekinmezyucel.hackerrank.java.introduction;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

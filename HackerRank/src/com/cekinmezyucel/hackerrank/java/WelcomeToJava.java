@@ -1,4 +1,4 @@
-package com.cekinmezyucel.hackerrank;
+package com.cekinmezyucel.hackerrank.java;
 
 public class WelcomeToJava {
 

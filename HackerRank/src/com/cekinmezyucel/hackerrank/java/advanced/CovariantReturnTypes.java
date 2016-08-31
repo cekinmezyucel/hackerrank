@@ -69,5 +69,4 @@ public class CovariantReturnTypes {
 		sc.close();
 
 	}
-
 }

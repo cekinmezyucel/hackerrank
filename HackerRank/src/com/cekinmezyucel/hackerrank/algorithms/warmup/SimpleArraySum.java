@@ -1,0 +1,22 @@
+package com.cekinmezyucel.hackerrank.algorithms.warmup;
+
+import java.util.Scanner;
+
+public class SimpleArraySum {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		int n = scan.nextInt();
+
+		int sum = 0;
+		for (int i = 0; i < n; i++) {
+			int val = scan.nextInt();
+			sum += val;
+		}
+
+		System.out.println(sum);
+		scan.close();
+	}
+
+}

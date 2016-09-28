@@ -8,11 +8,10 @@ public class SimpleArraySum {
 
 		Scanner scan = new Scanner(System.in);
 		int n = scan.nextInt();
-
 		int sum = 0;
+
 		for (int i = 0; i < n; i++) {
-			int val = scan.nextInt();
-			sum += val;
+			sum += scan.nextInt();
 		}
 
 		System.out.println(sum);

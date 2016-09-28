@@ -12,11 +12,12 @@ public class CamelCase {
 		for (int i = 0; i < s.length(); i++) {
 			Character c = s.charAt(i);
 			if (Character.isUpperCase(c)) {
-				count = count + 1;
+				count += 1;
 			}
 		}
 
 		System.out.println(count);
+		in.close();
 	}
 
 }

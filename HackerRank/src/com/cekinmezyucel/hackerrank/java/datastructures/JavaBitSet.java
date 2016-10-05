@@ -14,7 +14,6 @@ public class JavaBitSet {
 		BitSet b2 = new BitSet(n);
 
 		while (m-- > 0) {
-			// SET 1 4
 			switch (scan.next()) {
 			case "AND":
 				if (scan.nextInt() == 1) {
@@ -23,7 +22,7 @@ public class JavaBitSet {
 					b2.and(b1);
 				}
 				scan.nextInt();
-				System.out.println(b1.cardinality() + " " + b2.cardinality());
+
 				break;
 			case "OR":
 				if (scan.nextInt() == 1) {
@@ -32,7 +31,6 @@ public class JavaBitSet {
 					b2.or(b1);
 				}
 				scan.nextInt();
-				System.out.println(b1.cardinality() + " " + b2.cardinality());
 				break;
 			case "XOR":
 				if (scan.nextInt() == 1) {
@@ -41,7 +39,6 @@ public class JavaBitSet {
 					b2.xor(b1);
 				}
 				scan.nextInt();
-				System.out.println(b1.cardinality() + " " + b2.cardinality());
 				break;
 			case "FLIP":
 				if (scan.nextInt() == 1) {
@@ -49,7 +46,6 @@ public class JavaBitSet {
 				} else {
 					b2.flip(scan.nextInt());
 				}
-				System.out.println(b1.cardinality() + " " + b2.cardinality());
 				break;
 			case "SET":
 				if (scan.nextInt() == 1) {
@@ -57,12 +53,12 @@ public class JavaBitSet {
 				} else {
 					b2.set(scan.nextInt());
 				}
-				System.out.println(b1.cardinality() + " " + b2.cardinality());
 				break;
 
 			default:
 				break;
 			}
+			System.out.println(b1.cardinality() + " " + b2.cardinality());
 		}
 
 		scan.close();

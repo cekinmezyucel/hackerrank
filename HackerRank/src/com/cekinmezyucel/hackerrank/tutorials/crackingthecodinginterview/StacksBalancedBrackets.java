@@ -1,4 +1,4 @@
-package com.cekinmezyucel.hackerrank.crackingthecodinginterview;
+package com.cekinmezyucel.hackerrank.tutorials.crackingthecodinginterview;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -25,7 +25,6 @@ public class Kangaroo {
 		}
 
 		System.out.println("NO");
-		in.close();
 	}
 
 }

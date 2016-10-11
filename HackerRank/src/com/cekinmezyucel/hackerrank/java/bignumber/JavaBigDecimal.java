@@ -36,6 +36,7 @@ public class JavaBigDecimal {
 			System.out.println(s[i]);
 		}
 		// pull request deneme
+		// master push deneme
 	}
 
 }

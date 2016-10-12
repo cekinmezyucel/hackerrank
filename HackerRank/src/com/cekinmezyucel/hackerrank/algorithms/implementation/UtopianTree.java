@@ -20,7 +20,7 @@ public class UtopianTree {
 			if (i % 2 == 0) {
 				h += 1;
 			} else {
-				h = h * 2;
+				h *= 2;
 			}
 		}
 

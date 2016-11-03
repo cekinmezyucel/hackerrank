@@ -18,30 +18,28 @@ public class StoneDivision {
 
 		Arrays.sort(si);
 
-		if (calculateWin(n, m, si, si.length - 1)) {
+		if (calculateWin(n, m, si, si.length - 1, 1)) {
 			System.out.println("First");
 		} else {
 			System.out.println("Second");
 		}
 	}
 
-	static boolean calculateWin(long n, int m, long[] si, int siIndex) {
+	static boolean calculateWin(long n, int m, long[] si, int siIndex, int count) {
 
 		long siN = si[siIndex];
 
 		if (n / siN == 0)
 			return true;
 
-		if (n % siN == 0) {
-			long firstPile = n / siN;
-			if (firstPile % 2 == 0) {
-				return true;
-			} else {
-				return false;
-			}
-		}
+		if (n == 1)
 
-		return calculateWin(n, m, si, siIndex - 1);
+			if (n % siN == 0) {
+				long nN = n / siN;
+				count++;
+			}
+
+		return calculateWin(n, m, si, siIndex - 1, count);
 
 	}
 

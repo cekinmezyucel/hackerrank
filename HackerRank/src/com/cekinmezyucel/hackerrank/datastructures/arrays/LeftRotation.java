@@ -10,11 +10,11 @@ public class LeftRotation {
 		int d = scan.nextInt();
 		int rotate;
 
-		if (d > n) {
-			if (n % d == 0) {
+		if (d >= n) {
+			if (d % n == 0) {
 				rotate = 0;
 			} else {
-				rotate = n % d;
+				rotate = d % n;
 			}
 		} else {
 			rotate = d;

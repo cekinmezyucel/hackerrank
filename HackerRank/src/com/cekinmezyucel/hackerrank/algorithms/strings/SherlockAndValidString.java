@@ -49,7 +49,6 @@ public class SherlockAndValidString {
 					count++;
 				}
 			}
-
 			if (count == 1 || count == list.size() - 1) {
 				System.out.println("YES");
 			} else {

@@ -13,8 +13,8 @@ public class JavaDequeue {
 		int n = in.nextInt();
 		int m = in.nextInt();
 		int max = Integer.MIN_VALUE;
-		Deque<Integer> deque = new LinkedList<Integer>();
-		Set<Integer> set = new HashSet<Integer>();
+		Deque<Integer> deque = new LinkedList<>();
+		Set<Integer> set = new HashSet<>();
 
 		for (int i = 0; i < n; i++) {
 			int num = in.nextInt();

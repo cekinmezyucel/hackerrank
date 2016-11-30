@@ -40,9 +40,11 @@ public class BestDivisor {
 		if (divisors.size() == 1) {
 			System.out.println(divisors.get(0));
 		} else {
-			int theBest = Integer.MAX_VALUE;
+			int lower = Integer.MAX_VALUE;
+			int theBest = 0;
 			for (Integer number : divisors) {
-				if (sumOfDigits(number) < theBest) {
+				if (sumOfDigits(number) < lower) {
+					lower = sumOfDigits(number);
 					theBest = number;
 				}
 			}

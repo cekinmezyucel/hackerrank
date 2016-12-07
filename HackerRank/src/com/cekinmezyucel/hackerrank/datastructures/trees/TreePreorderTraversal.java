@@ -1,4 +1,4 @@
-package com.cekinmezyucel.hackerrank.datastructures;
+package com.cekinmezyucel.hackerrank.datastructures.trees;
 
 import java.util.Scanner;
 

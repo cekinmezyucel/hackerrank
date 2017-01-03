@@ -8,6 +8,7 @@ public class CompareTwoLinkedLists {
 		System.out.println(CompareLists(headA, headB));
 	}
 
+	// This is the code
 	static int CompareLists(Node headA, Node headB) {
 		if (null == headA && null == headB) {
 			return 1;

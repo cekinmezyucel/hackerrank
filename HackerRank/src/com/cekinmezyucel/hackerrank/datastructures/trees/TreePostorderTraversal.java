@@ -7,7 +7,7 @@ public class TreePostorderTraversal {
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		int T = sc.nextInt();
-		TreeNode root = null;
+		Node root = null;
 		while (T-- > 0) {
 			int data = sc.nextInt();
 			root = insert(root, data);
@@ -16,7 +16,7 @@ public class TreePostorderTraversal {
 		postOrder(root);
 	}
 
-	public static void postOrder(TreeNode root) {
+	public static void postOrder(Node root) {
 		if (root == null) {
 			return;
 		}
@@ -26,11 +26,11 @@ public class TreePostorderTraversal {
 		System.out.printf(root.data + " ");
 	}
 
-	public static TreeNode insert(TreeNode root, int data) {
+	public static Node insert(Node root, int data) {
 		if (root == null) {
-			return new TreeNode(data);
+			return new Node(data);
 		} else {
-			TreeNode cur;
+			Node cur;
 			if (data <= root.data) {
 				cur = insert(root.left, data);
 				root.left = cur;

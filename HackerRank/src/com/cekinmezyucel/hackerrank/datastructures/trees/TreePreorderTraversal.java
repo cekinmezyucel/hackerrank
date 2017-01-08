@@ -2,11 +2,12 @@ package com.cekinmezyucel.hackerrank.datastructures.trees;
 
 import java.util.Scanner;
 
-class TreeNode {
-	TreeNode left, right;
+class Node {
 	int data;
+	Node left;
+	Node right;
 
-	TreeNode(int data) {
+	Node(int data) {
 		this.data = data;
 		left = right = null;
 	}
@@ -17,7 +18,7 @@ public class TreePreorderTraversal {
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		int T = sc.nextInt();
-		TreeNode root = null;
+		Node root = null;
 		while (T-- > 0) {
 			int data = sc.nextInt();
 			root = insert(root, data);
@@ -26,7 +27,7 @@ public class TreePreorderTraversal {
 		preOrder(root);
 	}
 
-	public static void preOrder(TreeNode root) {
+	public static void preOrder(Node root) {
 
 		if (null == root) {
 			return;
@@ -39,11 +40,11 @@ public class TreePreorderTraversal {
 
 	}
 
-	public static TreeNode insert(TreeNode root, int data) {
+	public static Node insert(Node root, int data) {
 		if (root == null) {
-			return new TreeNode(data);
+			return new Node(data);
 		} else {
-			TreeNode cur;
+			Node cur;
 			if (data <= root.data) {
 				cur = insert(root.left, data);
 				root.left = cur;

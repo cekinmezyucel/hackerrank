@@ -7,6 +7,10 @@ class Node {
 	Node left;
 	Node right;
 
+	public Node() {
+		super();
+	}
+
 	Node(int data) {
 		this.data = data;
 		left = right = null;

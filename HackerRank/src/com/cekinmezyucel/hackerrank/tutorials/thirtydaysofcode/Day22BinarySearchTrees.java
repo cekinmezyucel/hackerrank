@@ -60,3 +60,7 @@ public class Day22BinarySearchTrees {
 	}
 
 }
+
+/*
+ * testCase 7 3 5 2 1 4 6 7
+ */

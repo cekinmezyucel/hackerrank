@@ -44,3 +44,12 @@ public class BetweenTwoSets {
 		System.out.println(count);
 	}
 }
+
+/*
+ * Sample Input
+ * 2 3
+ * 2 4
+ * 16 32 96
+ * Sample Output
+ * 3
+ */

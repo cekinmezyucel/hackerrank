@@ -12,24 +12,14 @@ public class SherlockAndSquares {
 			int a = in.nextInt();
 			int b = in.nextInt();
 
-			squares(a, b);
+			double first = Math.ceil(Math.sqrt(a));
+			double last = Math.floor(Math.sqrt(b));
+
+			System.out.println((int) (last - first + 1));
+
 		}
 
 		in.close();
-	}
-
-	static void squares(int a, int b) {
-		int count = 0;
-
-		Double firstSquare = Math.ceil(Math.sqrt(a));
-
-		while (Math.pow(firstSquare, 2) <= b) {
-			count++;
-			firstSquare++;
-
-		}
-
-		System.out.println(count);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.cekinmezyucel.hackerrank.allcontests.weekofcode25;
+package com.cekinmezyucel.hackerrank.algorithms.implementation;
 
 import java.util.Scanner;
 
@@ -53,4 +53,5 @@ public class AppendAndDelete {
 			}
 		}
 	}
+
 }

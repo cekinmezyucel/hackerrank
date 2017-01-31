@@ -1,10 +1,9 @@
 package com.cekinmezyucel.hackerrank.algorithms.strings;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Scanner;
-import java.util.Set;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 public class Gemstones {
 
@@ -12,8 +11,7 @@ public class Gemstones {
 		Scanner in = new Scanner(System.in);
 		int n = in.nextInt();
 		List<String> list = new ArrayList<>();
-		Set<String> set = new HashSet<>();
-		Set<String> setX = new HashSet<>();
+		CopyOnWriteArraySet<String> set = new CopyOnWriteArraySet<>();
 		in.nextLine();
 
 		while (n-- > 0) {
@@ -30,12 +28,12 @@ public class Gemstones {
 		for (String gemstone : list) {
 			for (String gem : set) {
 				if (!gemstone.contains(gem)) {
-					setX.add(gem);
+					set.remove(gem);
 				}
 			}
 		}
 
-		System.out.println(set.size() - setX.size());
+		System.out.println(set.size());
 	}
 
 }

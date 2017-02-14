@@ -21,6 +21,7 @@ public class LonelyInteger {
 		for (int i = 0; i < n; i++) {
 			a[i] = in.nextInt();
 		}
+		in.close();
 		System.out.println(lonelyInteger(a));
 	}
 

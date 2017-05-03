@@ -28,10 +28,10 @@ public class PasswordCracker {
 		in.close();
 	}
 
-	static String calculate(String[] arr, String passWord, List<String> newList) {
-		if (passWord.length() == 0 && !newList.isEmpty()) {
+	static String calculate(String[] arr, String passWord, List<String> hackList) {
+		if (passWord.length() == 0 && !hackList.isEmpty()) {
 			StringBuilder sb = new StringBuilder();
-			for (String pass : newList) {
+			for (String pass : hackList) {
 				sb.append(pass).append(" ");
 			}
 			return sb.toString();
@@ -40,8 +40,8 @@ public class PasswordCracker {
 				if (passWord.contains(pass)) {
 					if (passWord.substring(0, pass.length()).equals(pass)) {
 						String newPassword = passWord.replaceFirst(pass, "");
-						newList.add(pass);
-						return calculate(arr, newPassword, newList);
+						hackList.add(pass);
+						return calculate(arr, newPassword, hackList);
 					}
 				}
 			}

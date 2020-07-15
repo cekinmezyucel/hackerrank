@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class LonelyInteger {
 
+	// Test
+
 	private static int lonelyInteger(int[] a) {
 		int value = 0;
 
